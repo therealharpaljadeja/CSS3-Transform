@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Challenge 1</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+    
+        .card{
+            margin: 30px auto;
+         width:40%;
+        height:40%;
+        }
+        .card #one{
+            width:100%;
+            height:100%;
+        }
+        .card #one img{
+            width:100%;
+            height: 100%;
+            transform: scale(1);
+            transition: transform 0.4s;
+        }
+        .card #one img:hover{
+            transform: scale(1.3);
+        }
+        
+        
+         .card{
+            margin: 30px auto;
+         width:40%;
+        height:40%;
+        }
+        .card #two{
+            width:100%;
+            height:100%;
+            overflow: hidden;
+        }
+        .card #two img{
+            width:100%;
+            height: 100%;
+            transform: scale(1.5) rotate(10deg);
+            transition: transform 0.4s;
+        }
+        .card #two img:hover{
+            transform: scale(1) rotate(0deg);
+        }
+        
+         .card #three{
+            width:100%;
+            height:100%;
+            overflow: hidden;
+        }
+        .card #three img{
+            width:100%;
+            height: 100%;
+            transform-origin: top left;
+            transform: scale(1);
+            transition: transform 0.4s;
+        }
+        .card #three img:hover{
+            transform: scale(1.2);
+        }
+        
+        .card #four{
+            width:100%;
+            height:100%;
+            overflow: hidden;
+        }
+        .card #four img{
+            width:100%;
+            height: 100%;
+            transform: scale(1);
+            transition: transform 0.4s,filter 0.4s;
+        }
+        .card #four img:hover{
+            transform: scale(1.7);
+            filter: blur(4px);
+        }
+        
+          .card #five{
+            width:100%;
+            height:100%;
+            overflow: hidden;
+        }
+        .card #five img{
+            width:100%;
+            height: 100%;
+            transform: scale(1) rotate(0deg);
+            transition: transform 0.4s,filter 0.4s;
+        }
+        .card #five img:hover{
+            transform: scale(1.5) rotate(10deg);
+            filter: grayscale(100%);
+        }
+    </style>
+</head>
+<body>
+   <div class="card">
+   <div class="card-img" id="one">
+    <img src="pexels-photo-912587.jpeg">
+    </div>
+    </div>
+    
+     <div class="card">
+   <div class="card-img" id="two">
+    <img src="pexels-photo-912587.jpeg">
+    </div>
+    </div>
+    
+    <div class="card">
+   <div class="card-img" id="three">
+    <img src="pexels-photo-912587.jpeg">
+    </div>
+    </div>
+    
+    
+    <div class="card">
+   <div class="card-img" id="four">
+    <img src="pexels-photo-912587.jpeg">
+    </div>
+    </div>
+    
+     <div class="card">
+   <div class="card-img" id="five">
+    <img src="pexels-photo-912587.jpeg">
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sliding Door</title>
+    <style>
+        .container{
+            width:400px;
+            position: relative;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        #one{
+            background-color: teal;
+            color: white;
+            height: 170px;
+            padding: 20px;
+        }
+        #two{
+            background-color:coral;
+            color: white;
+            height: 170px;
+            padding: 20px;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            transform: translate(-400px);
+            transition: transform 0.4s;
+        }
+        .container:hover #two{
+            transform: translate(0px);
+        }
+        h2{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="one">
+            <h2>Main</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam explicabo id maiores, sequi laborum consequatur, fuga doloremque mollitia vel illum sit minima aliquid soluta, nobis numquam dolorem cumque, a dolorum!
+            </p>
+        </div>
+        <div class="card" id="two">
+            <h2>Second</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam explicabo id maiores, sequi laborum consequatur, fuga doloremque mollitia vel illum sit minima aliquid soluta, nobis numquam dolorem cumque, a dolorum!
+            </p>
+        </div>
+    </div>
+</body>
+</html>
